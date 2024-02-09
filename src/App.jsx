@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Modal from './components/modal/Modal';
+import Pictures from './components/pictures';
 
 const App = () => {
 	const [content, setContent] = useState();
@@ -17,6 +18,7 @@ const App = () => {
 			</button>
 
 			<Modal closeModal={() => setContent()}>{content}</Modal>
+			<Pictures></Pictures>
 		</>
 	);
 };
